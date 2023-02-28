@@ -2,7 +2,7 @@
 
 $("button").click(function(){
 
-//hide the submit button
+//to prevent multiple submissions
 $("button").hide();
 
 let goneMinutes = new Number($( "input:checked" ).val());
@@ -11,7 +11,7 @@ let startTime = new Date();
 
 var countDownDate =   startTime.setMinutes(startTime.getMinutes() + goneMinutes);
 
-// Update the count down every 1 second
+//Update the count down every 1 second
 var x = setInterval(function() {
 
   // Get today's date and time
