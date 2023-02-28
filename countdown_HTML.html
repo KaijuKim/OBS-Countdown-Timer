@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <?!= include('countdown_CSS') ?>
+    </head>
+  <body>
+
+    <!-- Display the countdown timer in an element -->
+   <p>How many minutes to countdown?</p>
+
+<fieldset>
+   <p>
+      <label for="five">
+        <input name="minutes" type="radio" id="five" value="5" />
+        <span>05 minutes</span>
+      </label>
+    </p>
+       <p>
+      <label for="ten">
+        <input name="minutes" type="radio" id="ten" value="10" />
+        <span>10 minutes</span>
+      </label>
+    </p>
+      <p>
+      <label for="fifteen">
+        <input name="minutes" type="radio" id="fifteen" value="15" />
+        <span>15 minutes</span>
+      </label>
+    </p>
+    <p>
+      <label for="twenty">
+        <input name="minutes" type="radio" id="twenty" value="20" />
+        <span>20 minutes</span>
+      </label>
+    </p>
+</fieldset>
+
+    <button class="btn waves-effect waves-light" id="button" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+   
+<p id="demo"></p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<?!= include("countdown_JS") ?>
+
+  </body>
+</html>
